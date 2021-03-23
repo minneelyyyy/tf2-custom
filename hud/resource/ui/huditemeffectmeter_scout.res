@@ -1,10 +1,11 @@
 #base "huditemeffectmeter.res"
 
-"Resource/UI/HudItemEffectMeter_Scout.res"
+// Soda Popper
+
+"Resource/UI/HudItemEffectMeter_SodaPopper.res"
 {
 	HudItemEffectMeter
 	{
-		"ypos"										"c118"
-		"ypos_minmode"								"c72"
-	}
+		"ypos"			"r123"
+	}	
 }

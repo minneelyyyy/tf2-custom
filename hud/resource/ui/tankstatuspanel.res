@@ -2,23 +2,23 @@
 {
 	"Background"
 	{
-		"ControlName"								"ScalableImagePanel"
-		"fieldName"									"Background"
-		"xpos"										"0"
-		"ypos"										"999"
-		"zpos"										"-1"
-		"wide"										"200"
-		"tall"										"24"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"image"										"replay/thumbnails/panels/material_transparent50"
+		"ControlName"			"ScalableImagePanel"
+		"fieldName"				"Background"
+		"xpos"					"0"
+		"ypos"					"999"
+		"zpos"					"-1"
+		"wide"					"200"
+		"tall"					"24"
+		"autoResize"			"0"
+		"pinCorner"				"0"
+		"visible"				"0"
+		"enabled"				"1"
+		"image"					"../HUD/tournament_panel_brown"
+
+		"src_corner_height"		"22"				// pixels inside the image
+		"src_corner_width"		"22"
 		
-		"src_corner_height"							"24"
-		"src_corner_width"							"24"
-	
-		"draw_corner_width"							"8"
-		"draw_corner_height" 						"8"
+		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"0"	
 	}
 }

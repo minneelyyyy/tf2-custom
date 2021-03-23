@@ -1,144 +1,157 @@
 "Resource/UI/HudStopWatch.res"
-{	
-	"StopWatchAnchor"
+{
+	"HudStopWatchBG"
 	{
-		"ControlName"								"EditablePanel"
-		"fieldName"									"StopWatchAnchor"
-		"xpos"										"cs-0.5-10"
-		"ypos"										"0"
-		"zpos"										"0"
-		"wide"										"1"
-		"tall"										"1"
-		"visible"									"0"
-		"enabled"									"1"
-		"proportionaltoparent"						"1"
-		
-		if_comp
-		{
-			"ypos"									"28"
-		}
+		"ControlName"		"ImagePanel"
+		"fieldName"		"HudStopWatchBG"
+		"xpos"			"70"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"0"
+		"tall"			"20"
+		"autoResize"		"0"
+		"pinCorner"		"1"
+		"visible"		"1"
+		"enabled"		"1"
+		"border"	"noborder"
+		"fillcolor"	"0 0 0 0"
 	}
-	
-	"StopWatchPointsLabel"
+
+	"StopWatchImageCaptureTime"
 	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"StopWatchPointsLabel"
-		"font"										"Size 12"
-		"fgcolor"									"White"
-		"labelText"									"%pointslabel%"
-		"textAlignment"								"center"
-		"textinsety"								"0"
-		"xpos"										"0"
-		"ypos"										"0"
-		"zpos"										"4"
-		"wide"										"50"
-		"tall"										"18"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"1"
-		"enabled"									"1"
-		"AllCaps"									"1"
-		
-		"pin_to_sibling" 							"StopWatchAnchor"
-		"pin_corner_to_sibling" 					"PIN_CENTER_TOP"
-		"pin_to_sibling_corner" 					"PIN_CENTER_TOP"
+		"ControlName"		"ImagePanel"
+		"fieldName"		"StopWatchImageCaptureTime"
+		"wide"			"0"
 	}
-	
-	"StopWatchScoreToBeat"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"StopWatchScoreToBeat"
-		"font"										"Size 12"
-		"fgcolor"									"White"
-		"labelText"									"%scoretobeat%"
-		"textAlignment"								"east"
-		"xpos"										"0"
-		"ypos"										"0"
-		"zpos"										"4"
-		"wide"										"15"
-		"tall"										"18"
-		"autoResize"								"0"
-		"pinCorner"									"0"
-		"visible"									"0"
-		"enabled"									"1"
-		"AllCaps"									"1"
-		
-		"pin_to_sibling" 							"StopWatchPointsLabel"
-		"pin_corner_to_sibling" 					"PIN_CENTER_RIGHT"
-		"pin_to_sibling_corner" 					"PIN_CENTER_LEFT"
-	}
-	
+
 	"ObjectiveStatusTimePanel"
 	{
-		"ControlName"								"EditablePanel"
-		"fieldName"									"ObjectiveStatusTimePanel"
-		"xpos"										"0"
-		"ypos"										"0"
-		"zpos"										"1"
-		"wide"										"50"
-		"tall"										"18"
-		"visible"									"0"
-		"enabled"									"1"
+		"ControlName"			"EditablePanel"
+		"fieldName"			"ObjectiveStatusTimePanel"
+		"xpos"				"26"
+		"ypos"				"0"	[$WIN32]
+		"zpos"				"5"
+		"wide"				"70"
+		"tall"				"20"
+		"visible"			"0"
+		"enabled"			"1"
 		
-		"pin_to_sibling" 							"StopWatchPointsLabel"
-		"pin_corner_to_sibling" 					"PIN_CENTER_LEFT"
-		"pin_to_sibling_corner" 					"PIN_CENTER_RIGHT"
-		
-		"ClockIcon"
-		{
-			"controlName"							"CExLabel"
-			"fieldName"	 							"ClockIcon"
-			"xpos"									"9999"
-		}
-		"ClockIconShadow"
-		{
-			"controlName"							"CExLabel"
-			"fieldName"	 							"ClockIcon"
-			"xpos"									"9999"
-		}
 
 		"TimePanelValue"
 		{
-			"ControlName"							"CExLabel"
-			"fieldName"								"TimePanelValue"
-			"font"									"Size 12"
-			"fgcolor"								"White"
-			"xpos"									"0"
-			"ypos"									"0"
-			"zpos"									"3"
-			"wide"									"50"
-			"tall"									"18"
-			"visible"								"1"
-			"enabled"								"1"
-			"textAlignment"							"west"
-		}	
+			"ControlName"		"CExLabel"
+			"fieldName"		"TimePanelValue"
+			"font"			"productbold14"
+			"fgcolor"		"TanLight"
+			"xpos"			"0"
+			"ypos"			"0"
+			"zpos"			"3"
+			"wide"			"44"
+			"bgcolor_override"			"0 0 0 165"
+			"useproportionaltextinsets"			"1"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"textAlignment"		"center"
+			
+		}
+			
 	}
-	
-	
-	
-	
-	"StopWatchImageCaptureTime"
+
+	"StopWatchScoreToBeat"
 	{
-		"ControlName"								"ImagePanel"
-		"fieldName"									"StopWatchImageCaptureTime"
-		"xpos"										"9999"
+		"ControlName"		"CExLabel"
+		"fieldName"		"StopWatchScoreToBeat"
+		"font"			"HudFontMediumBold"
+		"labelText"		"%scoretobeat%"
+		"textAlignment"		"center"
+		"xpos"			"0"
+		"ypos"			"6"
+		"zpos"			"4"
+		"wide"			"0"
+		"tall"			"30"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+
 	}
-	"HudStopWatchDescriptionBG"
+	"StopWatchPointsLabel"
 	{
-		"ControlName"								"ScalableImagePanel"
-		"fieldName"									"HudStopWatchDescriptionBG"
-		"xpos"										"9999"
+		"ControlName"		"CExLabel"
+		"fieldName"		"StopWatchPointsLabel"
+		"font"			"productbold14"
+		"labelText"		"%scoretobeat%"
+		"textAlignment"		"east"
+		"xpos"			"12"
+		"ypos"			"0"
+		"zpos"			"6"
+		"wide"			"14"
+		"tall"			"20"
+		"bgcolor_override"			"0 0 0 165"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"wrap"			"0"
 	}
-	"StopWatchDescriptionLabel"
-	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"StopWatchDescriptionLabel"
-		"xpos"										"9999"
-	}
+
 	"StopWatchLabel"
 	{
-		"ControlName"								"CExLabel"
-		"fieldName"									"StopWatchLabel"
-		"xpos"										"9999"
+		"ControlName"		"CExLabel"
+		"fieldName"		"StopWatchLabel"
+		"font"			"PRODUCT8"
+		"labelText"		"%stopwatchlabel%"
+		"textAlignment"		"center"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"4"
+		"wide"			"0"
+		"bgcolor"			"0 0 0 165"
+		"bgcolor_override"			"0 0 0 165"
+		"tall"			"20"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"wrap"			"1"
+
+	}
+
+	"HudStopWatchDescriptionBG"
+	{
+		"ControlName"		"ScalableImagePanel"
+		"fieldName"		"HudStopWatchDescriptionBG"
+		"xpos"			"0"
+		"ypos"			"27"
+		"zpos"			"-1"
+		"wide"			"0"
+		"tall"			"19"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+	
+
+	}
+
+	"StopWatchDescriptionLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"StopWatchDescriptionLabel"
+		"font"			"PRODUCT8"
+		"labelText"		"%descriptionlabel%"
+		"textAlignment"		"west"
+		"xpos"			"4"
+		"ypos"			"0"
+		"zpos"			"4"
+		"wide"			"0"
+		"tall"			"20"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"wrap"			"0"
+
 	}
 }

@@ -1,20 +1,26 @@
-#base "scout_blue.res"
+#base "heavy_blue.res"
 
-"Resource/UI/disguise_menu/soldier_blue.res"
+"Resource/UI/disguise_menu/heavy_red.res"
 {
 	"ItemNameLabel"
-	{	
-		"labelText"									"2"
-		"fgcolor_override"							"Blue"
+	{
+		"labelText"		"#TF_Class_Name_Soldier"
 	}
-	
-	"NumberLabel"
-	{	
-		"labelText"									"2"
+
+	"ClassIcon"	
+	{
+		"icon"			"hud_menu_soldier_blu"
 	}
 	
 	"NewNumberLabel"
-	{	
-		"labelText"									"2"
+	{
+		"labelText"		"2"
+		"bgcolor_override"	"softblue200"
+	}
+	
+	"NumberLabel"
+	{		
+		"labelText"		"2"
+		"bgcolor_override"	"softblue200"
 	}
 }
