@@ -4,18 +4,16 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Shade"
-		"xpos"			"0"
+		"xpos"			"3"
 		"ypos"			"0"
-		"zpos"			"-1000"
+		"zpos"			"1000"
 		"wide"			"f0"
 		"tall"			"f0"
 		"visible"		"1"
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"	"0"
-
-		"bgcolor_override"	"0 0 0 255"
+		"bgcolor_override"	"0 0 0 0"
 	}
-
 	"TitleGradient"
 	{
 		"ControlName"		"ImagePanel"
@@ -25,15 +23,14 @@
 		"wide"		"f0"
 		"tall"		"60"
 		"zpos"	"98"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"rotation"		"3"
 		"proportionaltoparent"	"1"
 		"scaleimage"	"1"
 		"mouseinputenabled"	"0"
 		"alpha"		"180"
-
-		"image"		"replay\thumbnails\bg_blank"
+		"image"		"gradient_pure_black"
 	}
 	
 	"InnerGradient"
@@ -42,132 +39,96 @@
 		"fieldName"		"InnerGradient"
 		"xpos"		"3"
 		"rotation"		"2"
-
 		if_left
 		{
 			"xpos"	"rs1-3"
 			"rotation"		"1"
 		}
-
 		"ypos"		"0"
 		"wide"		"30"
 		"tall"		"f0"
 		"zpos"	"1000"
-		"visible"		"1"
-		"enabled"		"1"
-
+		"visible"		"0"
+		"enabled"		"0"
 		"proportionaltoparent"	"1"
 		"scaleimage"	"1"
 		"mouseinputenabled"	"0"
-
-		"image"		"replay\thumbnails\bg_blank"
+		"image"		"gradient_pure_black"
 	}
-
 	"OuterGradient"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"OuterGradient"
 		"xpos"		"rs1"
 		"rotation"		"1"
-
 		if_left
 		{
 			"xpos"	"0"
 			"rotation"		"2"
 		}
-
 		"ypos"		"0"
 		"wide"		"20"
 		"tall"		"f0"
 		"zpos"	"1000"
-		"visible"		"1"
-		"enabled"		"1"
-
-
+		"visible"		"0"
+		"enabled"		"0"
 		"proportionaltoparent"	"1"
 		"scaleimage"	"1"
 		"mouseinputenabled"	"0"
 		"alpha"		"255"
-
-		"image"		"replay\thumbnails\bg_blank"
+		"image"		"gradient_pure_black"
 	}
-
 	"CloseButton"
 	{
-		"ControlName"	"CExImageButton"
+		"ControlName"	"CExButton"
 		"fieldName"		"CloseButton"
-		"xpos"			"0"
-		"ypos"			"cs-0.5"
+		"xpos"			"rs1"
+		"labelText"		""
+		if_left
+		{
+			"xpos"		"0"
+			"labelText"		"("
+		}
+		"ypos"			"0"
 		"zpos"			"10000"
-		"wide"			"24"
-		"tall"			"74"
+		"wide"			"15"
+		"tall"			"f0"
 		"visible"		"1"
 		"proportionaltoparent"	"1"
 		"command"		"nav_close"
-		"labelText"		"X"
-		"textinsetx"		"1000"
-		"textinsety"		"1000"
-		"textAlignment"	"center"
-		"font"			"HudFontSmallBold"
-
+		"textAlignment"	"east"
+		"font"			"SymbolS"
 		"armedBgColor_override"	"0 0 0 0"
 		"defaultBgColor_override"	"0 0 0 0"
-
-		"armedFgColor_override"	"blank"
-		"FgColor_override"	"blank"
-		
-		"image_drawcolor"	"245 245 245 60"
-		"image_armedcolor"	"245 245 245 180"
-		"image_disabledcolor"	"236 236 236 0"
-		
-		"SubImage"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"SubImage"
-			"xpos"			"cs-0.5"
-			"ypos"			"cs-0.5"
-			"proportionaltoparent"			"1"
-			"zpos"			"1"
-			"wide"			"16"
-			"tall"			"16"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"
-			"image"			"replay/thumbnails/softicons/x"
-		}
+		"defaultFgColor_override" "255 255 255 255"
+		"armedFgColor_override" "255 255 255 155"
 	}
-	
 	"ReturnButton"
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"ReturnButton"
-		"xpos"			"0"
-
+		"xpos"			"3"
+		"labelText"		"("
 		if_left
 		{
-			"xpos"	"0"
-			"labelText"		">"
+			"xpos"	"rs1-3"
+			"labelText"		""
 		}
-
 		"ypos"			"0"
-		"zpos"			"10001"
-		"wide"			"34"
-		"tall"			"74"
+		"zpos"			"10000"
+		"wide"			"20"
+		"tall"			"f0"
 		"visible"		"1"
 		"proportionaltoparent"	"1"
 		"command"		"nav_to"
-		"labelText"		"<"
-		"textinsetx"	"22"
-
+		"labelText"		"("
 		"textAlignment"	"west"
-		"font"			"product22"
-
-		"armedBgColor_override"		"collyhuddarkgray"
-		"defaultBgColor_override"	"collyhuddarkgray"
-
-		"armedFgColor_override"	"Orange"
+		"font"			"SymbolS"
+		"armedBgColor_override"	"0 0 0 0"
+		"defaultBgColor_override"	"0 0 0 0"
+		"defaultFgColor_override" "255 255 255 255"
+		"armedFgColor_override" "255 255 255 155"
 	}
-
 	
 	"BGPanel"
 	{
@@ -177,10 +138,10 @@
 		"ypos"			"0"
 		"zpos"			"1"
 		"wide"			"f0"
-		"tall"			"f0"
+		"tall"			"f-20"
 		"visible"		"1"
 		"proportionaltoparent"	"1"
-
-		"border"		"noborder"
+		"border"		"NoBorder"
+		"bgcolor_override"	"0 0 0 0"
 	}
 }

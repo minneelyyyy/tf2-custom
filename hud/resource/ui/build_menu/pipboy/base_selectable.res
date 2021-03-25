@@ -26,8 +26,6 @@
 		"zpos"			"1"
 		"wide"			"84"
 		"tall"			"15"
-		"autoResize"	"0"
-		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#TF_Empty_Slot"
@@ -37,7 +35,6 @@
 		"brighttext"	"0"
 		"fgcolor"		"black"
 	}
-
 	"ItemBackground"
 	{
 		"ControlName"	"CIconPanel"
@@ -51,7 +48,7 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"hud_menu_item_bg"
-		"iconColor"		"0 0 0 255"
+		"iconColor"		"ProgressOffWhite"
 	}
 	
 	"BuildingIcon"	
@@ -91,14 +88,12 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"CostLabel"
 		"font"			"HudFontSmall"
-		"fgcolor"		"0 255 0 255"
+		"fgcolor"		"TanDarker"
 		"xpos"			"23"
 		"ypos"			"78"
 		"zpos"			"1"
 		"wide"			"84"
 		"tall"			"13"
-		"autoResize"	"0"
-		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"%metal%"

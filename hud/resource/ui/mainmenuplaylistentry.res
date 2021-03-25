@@ -1,66 +1,17 @@
 "Resource/UI/MainMenuPlayListEntry.res"
 {
-	"ModeImage"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"ModeImage"
-		"xpos"			"-5"
-		"ypos"			"0"
-		"zpos"			"0"
-		"wide"			"240"
-		"tall"			"60"
-		"visible"		"1"
-		"enabled"		"1"
-		"scaleImage"	"1"	
-		"proportionaltoparent"	"0"
-		"image"			""
-	}
-	"ModeImageCover"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"ModeImage"
-		"xpos"			"0"
-		"ypos"			"50"
-		"zpos"			"1"
-		"wide"			"240"
-		"tall"			"60"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"		"collyhuddarkgray"
-	}
-
 	"PlayListDropShadow"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"PlayListDropShadow"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"1000"
-		"wide"			"0"
-		"tall"			"f0"
-		"visible"		"0"
-		"PaintBackgroundType"	"2"
-		"border"		"noborderThin"
-		"proportionaltoparent"	"1"
-		"mouseinputenabled"	"0"
+		"border"		"NoBorder"
 	}
-
 	"BGColor"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"BGColor"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"-1"
-		"wide"			"f0"
-		"tall"			"f0"
-		"visible"		"0"
-		"enabled"		"1"
-		
-		"proportionaltoparent"	"1"
-		"bgcolor_override"	"0 0 0 255"
+		"bgcolor_override"	"0 0 0 0"
 	}
-
 	
 	"ToolTipHack"
 	{
@@ -77,7 +28,6 @@
 		"eatmouseinput"	"0"	
 		"showtooltipswhenmousedisabled"	"1"
 	}
-
 	"ToolTipButtonHack"
 	{
 		"ControlName"	"EditablePanel"
@@ -94,38 +44,35 @@
 		"showtooltipswhenmousedisabled"	"1"
 		"proportionaltoparent" "1"
 	}
-
 	"ModeButton"
 	{
-		"ControlName"	"CExButton"
-		"fieldName"		"ModeButton"
-		"xpos"			"0"
-		"ypos"			"rs1"
-		"zpos"			"6"
-		"wide"			"120"
-		"tall"			"16"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"%button_token%"
-		"textinsetx"	"6"
-		"use_proportional_insets" "1"
-		"font"			"HudFontSmallestBold"
-		"textAlignment"	"west"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"default"		"1"
-		"command"		"%button_command%"
-		"proportionaltoparent" "1"
-		"actionsignallevel"	"2"
-
-		//"border_default"		"MainMenuMiniButtonDefault"
-		//"border_armed"		"MainMenuMiniButtonArmed"
-		"paintbackground"	"1"
-
-		"sound_depressed"	"UI/buttonclick.wav"
-		"sound_released"	"UI/buttonclickrelease.wav"
+		"ControlName"				"CExButton"
+		"fieldName"					"ModeButton"
+		"xpos"						"rs1-6"
+		"ypos"						"0"
+		"zpos"						"0"
+		"wide"						"f0"
+		"tall"						"f0"
+		"visible"					"1"
+		"enabled"					"1"
+		"labelText"					"%button_token%"
+		"textinsetx"				"4"
+		"use_proportional_insets" 	"1"
+		"font"						"Protos15"
+		"textAlignment"				"center"
+		"RoundedCorners"			"0"
+		"command"					"%button_command%"
+		"proportionaltoparent" 		"1"
+		"actionsignallevel"			"2"
+		"border_default"			"NoBorder"
+		"border_armed"				"OptionsCategoryBorder"
+		"paintbackground"			"0"
+		"sound_depressed"			"UI/buttonclick.wav"
+		"sound_released"			"UI/buttonclickrelease.wav"
+		"defaultFgColor_override" 	"255 255 255 255"
+		"armedFgColor_override" 	"255 255 255 155"
+		"depressedFgColor_override" "234 234 234 255"
 	}	
-
 	"MatchmakingBanPanel"
 	{
 		"ControlName"	"EditablePanel"
@@ -140,7 +87,6 @@
 		"mouseinputenabled"	"0"
 		"bgcolor_override"	"0 0 0 250"
 		"proportionaltoparent"	"1"
-
 		"MatchmakingBanDurationLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -159,59 +105,9 @@
 			"autoResize"	"1"
 			"pinCorner"		"0"
 			"proportionaltoparent"	"1"
-
 			"paintbackground"	"0"
 		}
 	}
-
-	"DescLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"DescLabel"
-		"font"			"product8"
-		"labelText"		"%desc_token%"
-		"textAlignment"	"north-west"
-		"xpos"			"0"
-		"ypos"			"76"
-		"textinsetx"			"6"
-		"textinsety"			"6"
-		"use_proportional_insets" "1"
-		"zpos"			"2"
-		"wide"			"120"
-		"tall"			"50"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"wrap"			"1"
-		"fgcolor_override" "TanLight60"
-		"bgcolor_override" "0 0 0 165"
-		"proportionaltoparent" "1"
-		"mouseinputenabled"	"0"
-	}
-
-	"DescLabelShadow"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"DescLabelShadow"
-		"font"			"MMenuPlayListDesc"
-		"labelText"		"%desc_token%"
-		"textAlignment"	"north-west"
-		"xpos"			"rs1+1"
-		"ypos"			"19"
-		"zpos"			"1"
-		"wide"			"125"
-		"tall"			"40"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"wrap"			"1"
-		"fgcolor_override" "blank"
-		"proportionaltoparent" "1"
-		"mouseinputenabled"	"0"
-	}
-	
 	"DisabledIcon"
 	{
 		"ControlName"	"CExImageButton"
@@ -228,7 +124,6 @@
 		"labeltext"			""
 		"eatmouseinput"	"0"	
 		"button_activation_type"	"1"
-
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 				

@@ -1,50 +1,54 @@
+#base "Def_Files/ObjectiveStatusMultipleEscort.res"
+////************************************************Multi Payload Settings.
 "Resource/UI/ObjectiveStatusMultipleEscort.res"
 {	
 	"ObjectiveStatusMultipleEscort"
 	{
-		"ControlName"		"EditablePanel"
-		"fieldName"			"ObjectiveStatusMultipleEscort"
-		"xpos"				"0"
-		"ypos"				"0"
-		"wide"				"f0"
-		"tall"				"480"
-		"visible"			"1"
-		"enabled"			"1"
-	}
-	
-	"BlueEscortPanel"
-	{
-		"ControlName"		"CTFHudEscort"
-		"fieldName"			"BlueEscortPanel"
-		"xpos"				"c-78"
-		"ypos"				"r30"
-		"zpos"				"1"
-		"wide"				"162"
-		"tall"				"10"
-		"visible"			"1"
-		"enabled"			"1"
-		
-		"if_blue_is_top"
-		{
-			"ypos"				"r30"
+		"visible"									"1"
+		"enabled"									"1"
+	}						
+	"BlueEscortPanel"						
+	{						
+		"ypos"										"r150"
+		"if_blue_is_top"						
+		{						
+			"ypos"									"r150"
 		}
-	}
-
+		"EscortItemPanel"
+		{
+			"EscortTeardrop"
+			{
+				"ControlName"						"EditablePanel"
+				"fieldName"							"EscortTeardrop"
+				"xpos"								"9999"
+				"visible"							"0"
+				"enabled"							"0"
+			}	
+		}		
+	}	
 	"RedEscortPanel"
 	{
-		"ControlName"		"CTFHudEscort"
-		"fieldName"			"RedEscortPanel"
-		"xpos"				"c-78"
-		"ypos"				"r16"
-		"zpos"				"1"
-		"wide"				"162"
-		"tall"				"10"
-		"visible"			"1"
-		"enabled"			"1"
-		
-		"if_red_is_top"
-		{
-			"ypos"				"r16"
+		"ypos"										"r150"
+		"if_red_is_top"					
+		{					
+			"ypos"									"r150"
 		}
+		"EscortItemPanel"
+		{
+			"CapPlayerImage"
+			{
+				"wide"								"0"
+				"tall"								"0"
+			}			
+			"CapNumPlayers"			
+			{			
+				"xpos"								"22"
+			}		
+			"EscortTeardrop"
+			{
+				"visible"							"0"
+				"enabled"							"0"
+			}	
+		}		
 	}
 }

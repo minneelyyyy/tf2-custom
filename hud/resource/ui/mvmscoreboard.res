@@ -5,9 +5,9 @@
 		"ControlName"		"CWaveStatusPanel"
 		"fieldName"			"WaveStatusPanel"
 		"xpos"				"0"
-		"ypos"				"0"
+		"ypos"				"8"
 		"zpos"				"0"
-		"wide"				"f0"
+		"wide"				"600"
 		"tall"				"67"
 		"visible"			"1"
 		"enabled"			"1"
@@ -19,26 +19,25 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PopFileLabel"
-		"font"			"productbold10"
+		"font"			"ScoreboardMedium"
 		"labelText"		"%popfile%"
 		"textAlignment"	"east"
-		"xpos"			"c-264"
-		"ypos"			"c-67"
-		"wide"			"524"
-		"tall"			"16"
+		"xpos"			"290"
+		"ypos"			"375"
+		"wide"			"290"
+		"tall"			"20"
 		"fgcolor"		"tanlight"
-		"AllCaps"		"1"
 	}
 
 	"DifficultyContainer"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"DifficultyContainer"
-		"xpos"			"c12"
-		"ypos"			"999"
-		"wide"			"248"
+		"xpos"			"425"
+		"ypos"			"30"
+		"wide"			"150"
 		"tall"			"20"
-		"visible"		"0"
+		"visible"		"1"
 		
 		"DifficultyLabel"
 		{
@@ -48,24 +47,23 @@
 			"labelText"		"#TF_MvM_Difficulty"
 			"textAlignment"	"center"
 			"xpos"			"0"
-			"ypos"			"999"
+			"ypos"			"0"
 			"wide"			"150"
 			"tall"			"10"
 			"fgcolor"		"tanlight"
-			"visible"		"0"
 		}
 		
 		"DifficultyValue"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"DifficultyValue"
-			"font"			"productbold10"
+			"font"			"HudFontSmallBold"
 			"labelText"		"%difficultyvalue%"
 			"textAlignment"	"center"
 			"xpos"			"0"
-			"ypos"			"0"
+			"ypos"			"9"
 			"wide"			"150"
-			"tall"			"20"
+			"tall"			"10"
 			"fgcolor"		"tanlight"
 		}
 	}
@@ -79,7 +77,7 @@
 		"zpos"			"-1"
 		"wide"			"550"
 		"tall"			"150"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/tournament_panel_brown"
 		
@@ -96,8 +94,8 @@
 	{
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"MvMPlayerList"
-		"xpos"			"c-264"
-		"ypos"			"c-52"
+		"xpos"			"35"
+		"ypos"			"79"
 		"wide"			"530"
 		"tall"			"150"
 		"pinCorner"		"0"
@@ -113,10 +111,10 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CreditStatsContainer"
-		"xpos"			"0"
-		"ypos"			"0"
-		"wide"			"f0"
-		"tall"			"f0"
+		"xpos"			"100"
+		"ypos"			"230"
+		"wide"			"400"
+		"tall"			"205"
 		"visible"		"1"
 		
 		"CreditStatsBackground"
@@ -124,13 +122,13 @@
 			"ControlName"		"ScalableImagePanel"
 			"fieldName"		"CreditStatsBackground"
 			"xpos"			"0"
-			"ypos"			"0"
+			"ypos"			"5"
 			"zpos"			"-1"
 			"wide"			"400"
 			"tall"			"135"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"0"
+			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../HUD/tournament_panel_brown"
 
@@ -149,21 +147,21 @@
 			"labelText"		"#TF_PVE_Currency"
 			"textAlignment" "north-west"
 			"xpos"			"8"
-			"ypos"			"999"
+			"ypos"			"8"
 			"wide"			"100"
 			"tall"			"25"
 			"fgcolor"		"tanlight"
-			"visible"		"0"
 		}
 		
 		"PreviousWaveCreditInfoPanel"
 		{
 			"ControlName"	"CCreditDisplayPanel"
 			"fieldName"		"PreviousWaveCreditInfoPanel"
-			"xpos"			"c-266"
-			"ypos"			"c97"
-			"wide"			"127"
+			"xpos"			"8"
+			"ypos"			"30"
+			"wide"			"184"
 			"tall"			"60"
+			"wide"			"200"
 			"visible"		"1"
 		}
 		
@@ -171,10 +169,11 @@
 		{
 			"ControlName"	"CCreditDisplayPanel"
 			"fieldName"		"TotalGameCreditInfoPanel"
-			"xpos"			"c13"
-			"ypos"			"c97"
-			"wide"			"127"
+			"xpos"			"208"
+			"ypos"			"30"
+			"wide"			"184"
 			"tall"			"60"
+			"wide"			"200"
 			"visible"		"1"
 		}
 		
@@ -182,74 +181,24 @@
 		{
 			"ControlName"	"CCreditSpendPanel"
 			"fieldName"		"PreviousWaveCreditSpendPanel"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"127"
+			"xpos"			"8"
+			"ypos"			"75"
+			"wide"			"184"
 			"tall"			"60"
+			"wide"			"200"
 			"visible"		"1"
-			
-			"pin_to_sibling" 		"PreviousWaveCreditInfoPanel"
-			"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-			"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
 		}
 		
 		"TotalGameCreditSpendPanel"
 		{
 			"ControlName"	"CCreditSpendPanel"
 			"fieldName"		"TotalGameCreditSpendPanel"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"127"
+			"xpos"			"208"
+			"ypos"			"75"
+			"wide"			"184"
 			"tall"			"60"
+			"wide"			"200"
 			"visible"		"1"
-			
-			"pin_to_sibling" 		"TotalGameCreditInfoPanel"
-			"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
-			"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
-		}
-		
-		"HorizontalLineCover1"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"HorizontalLineCover1"
-			"xpos"			"0"
-			"ypos"			"-4"
-			"wide"			"1"
-			"tall"			"32"
-			"zpos"			"20"
-			"alpha"			"255"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fillcolor"		"250 250 250 0"
-			"border"		"LightWhiteLeft"
-			
-			"pin_to_sibling" 		"PreviousWaveCreditInfoPanel"
-			"pin_corner_to_sibling" "PIN_BOTTOMLEFT" // Corner of this Element
-			"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
-		}
-		
-		"HorizontalLineCover2"
-		{
-			"ControlName"	"ImagePanel"
-			"fieldName"		"HorizontalLineCover2"
-			"xpos"			"0"
-			"ypos"			"-4"
-			"wide"			"1"
-			"tall"			"32"
-			"zpos"			"20"
-			"alpha"			"255"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"fillcolor"		"250 250 250 0"
-			"border"		"LightWhiteLeft"
-			
-			"pin_to_sibling" 		"TotalGameCreditInfoPanel"
-			"pin_corner_to_sibling" "PIN_BOTTOMLEFT" // Corner of this Element
-			"pin_to_sibling_corner" "PIN_BOTTOMRIGHT" // Corner of Element you are pinning to
 		}
 
 		"RespecStatusLabel"
