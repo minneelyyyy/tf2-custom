@@ -26,6 +26,8 @@
 		"zpos"			"1"
 		"wide"			"84"
 		"tall"			"15"
+		"autoResize"	"0"
+		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#TF_Empty_Slot"
@@ -35,6 +37,7 @@
 		"brighttext"	"0"
 		"fgcolor"		"black"
 	}
+
 	"ItemBackground"
 	{
 		"ControlName"	"CIconPanel"
@@ -94,6 +97,8 @@
 		"zpos"			"1"
 		"wide"			"84"
 		"tall"			"13"
+		"autoResize"	"0"
+		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"%metal%"

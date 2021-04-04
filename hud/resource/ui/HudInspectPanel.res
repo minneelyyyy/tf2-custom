@@ -9,11 +9,9 @@
 		"zpos"			"10"
 		"wide"			"190"
 		"tall"			"100"
-		"visible"		"1"
-		"bgcolor_override"		"0 0 0 100"
-		"PaintBackgroundType"	"1"
-		"PaintBackground"	"1"
-		"border"	"noborder"
+		"visible"		"0"
+		"bgcolor_override"		"255 255 255 0"
+		"PaintBackgroundType"	"0"
 		
 		"model_ypos"		"10"
 		"model_center_x"	"1"
@@ -36,6 +34,7 @@
 			"use_item_rendertarget" "0"
 			"useparentbg"		"1"
 		}
+		
 		"ItemLabel"
 		{	
 			"ControlName"	"Label"
@@ -46,6 +45,8 @@
 			"zpos"			"1"
 			"wide"			"270"
 			"tall"			"9"
+			"autoResize"	"0"
+			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"#FreezePanel_Item"

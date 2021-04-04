@@ -1,4 +1,5 @@
 #base "MatchMakingDashboardSidePanel.res"
+
 "Resource/UI/MatchMakingDashboardComp.res"
 {
 	"CompStats"
@@ -10,25 +11,27 @@
 		"wide"			"270"
 		"tall"			"f70"
 		"visible"		"1"
-		"border"		"MainMenuButtonGlow"
 		"proportionaltoparent"	"1"
 	}
+
 	"Title"
 	{
 		"ControlName"		"Label"
 		"fieldName"		"Title"
-		"xpos"		"0"
-		"ypos"		"23"
+		"xpos"		"8"
+		"ypos"		"20"
 		"zpos"		"99"
 		"wide"		"f0"
 		"tall"		"20"
 		"proportionaltoparent"	"1"
 		"labeltext"		"#TF_Matchmaking_HeaderCompetitive"
-		"textAlignment"	"center"
-		"font"			"Protos15"
-		"fgcolor_override"	"242 242 242 255"
+		"textAlignment"	"west"
+		"font"			"HudFontMediumBigBold"
+		"fgcolor_override"	"TanDark"
+		
 		"mouseinputenabled"	"0"
 	}
+
 	"ShowExplanationsButton"
 	{
 		"ControlName"	"CExButton"
@@ -38,8 +41,11 @@
 		"zpos"			"100"
 		"wide"			"15"
 		"tall"			"o1"
-		"visible"		"0"
-		"enabled"		"0"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
 		"labelText"		"?"
 		"font"			"HudFontSmallBold"
 		"textAlignment"	"center"
@@ -52,23 +58,24 @@
 		"actionsignallevel"	"1"
 		"proportionaltoparent"	"1"
 	}
+
 	"RankTooltipPanel"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"RankTooltipPanel"
 		"xpos"			"5"
-		"ypos"			"44"
+		"ypos"			"40"
 		"zpos"			"1000"
 		"wide"			"8"
 		"tall"			"8"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"	"1"
 		"image"			"info"
 		"scaleImage"	"1"	
 		"alpha"			"75"
 	}
+
 	"stats"
 	{
 		"fieldName"		"stats"
@@ -80,6 +87,7 @@
 		"visible"		"1"
 		"proportionaltoparent"	"1"
 	}
+
 	"ToolTipButtonHack"
 	{
 		"ControlName"	"EditablePanel"
@@ -96,18 +104,22 @@
 		"showtooltipswhenmousedisabled"	"1"
 		"proportionaltoparent" "1"
 	}
+
 	"QueueButton"
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"QueueButton"
-		"xpos"			"c-128"
+		"xpos"			"cs-0.5"
 		"ypos"			"rs1-8"
 		"zpos"			"100"
 		"wide"			"f20"
 		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"3"
 		"visible"		"1"
 		"enabled"		"1"
-		"font"			"Protos18"
+		"tabPosition"	"0"
+		"font"			"HudFontMediumSmallBold"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -117,8 +129,10 @@
 		"mouseinputenabled"	"1"
 		"keyboardinputenabled"	"0"
 		"actionsignallevel"	"1"
+
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+
 		"armedBgColor_override"		"CreditsGreen"
 		"defaultBgColor_override"	"GreenSolid"
 	}

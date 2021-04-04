@@ -10,8 +10,11 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"wide"			"300"
-		"tall"			"15"
-		"fgcolor"		"Blank"
+		"tall"			"20"
+		"fgcolor"		"tanlight"
+		
+		
+		"bgcolor_override"		"0 0 0 80"
 	}
 		
 	"TableBackground"
@@ -19,89 +22,115 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"TableBackground"
 		"xpos"			"0"
-		"ypos"			"14"
+		"ypos"			"0"
 		"zpos"			"-1"
-		"wide"			"190"
-		"tall"			"42"
-		"visible"		"0"
-		"bgcolor_override"		"20 20 20 50"
+		"wide"			"f0"
+		"tall"			"f0"
+		"visible"		"1"
+		"bgcolor_override"		"0 0 0 165"
 	}
 	
 	"UpgradesLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"UpgradesLabel"
-		"font"			"Medium9"
+		"font"			"HudFontSmall"
 		"labelText"		"#TF_PVE_Upgrades"
-		"textAlignment" "north-west"
-		"xpos"			"10"
-		"ypos"			"34"
-		"wide"			"70"
-		"fgcolor"		"White"
+		"textAlignment" "west"
+		"xpos"			"6"
+		"ypos"			"20"
+		"wide"			"85"
+		"tall"			"20"
+		"fgcolor"		"tanlight"
 	}
 	
 	"UpgradesCountLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"UpgradesCountLabel"
-		"font"			"Medium9"
+		"font"			"HudFontSmall"
 		"labelText"		"%upgrades%"
-		"textAlignment" "north-east"
-		"xpos"			"63"
-		"ypos"			"34"
+		"textAlignment" "east"
+		"xpos"			"0"
+		"ypos"			"0"
 		"wide"			"30"
-		"fgcolor"		"White"
+		"tall"			"20"
+		"fgcolor"		"tanlight"
+		
+		"pin_to_sibling" 		"UpgradesLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"BuyBackLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BuyBackLabel"
-		"font"			"Medium9"
+		"font"			"HudFontSmall"
 		"labelText"		"#TF_PVE_Buybacks"
-		"textAlignment" "north-west"
-		"xpos"			"10"
-		"ypos"			"51"
-		"wide"			"70"
-		"fgcolor"		"White"
+		"textAlignment" "west"
+		"xpos"			"0"
+		"ypos"			"-10"
+		"wide"			"85"
+		"tall"			"20"
+		"fgcolor"		"tanlight"
+		
+		"pin_to_sibling" 		"UpgradesLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 	
 	"BuyBackCountLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BuyBackCountLabel"
-		"font"			"Medium9"
+		"font"			"HudFontSmall"
 		"labelText"		"%buybacks%"
-		"textAlignment" "north-east"
-		"xpos"			"63"
-		"ypos"			"51"
+		"textAlignment" "east"
+		"xpos"			"0"
+		"ypos"			"0"
 		"wide"			"30"
-		"fgcolor"		"White"
+		"tall"			"20"
+		"fgcolor"		"tanlight"
+		
+		"pin_to_sibling" 		"BuyBackLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"BottleLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BottleLabel"
-		"font"			"Medium9"
+		"font"			"HudFontSmall"
 		"labelText"		"#TF_PVE_Bottles"
-		"textAlignment" "north-west"
-		"xpos"			"10"
-		"ypos"			"68"
-		"wide"			"70"
-		"fgcolor"		"White"
+		"textAlignment" "west"
+		"xpos"			"0"
+		"ypos"			"-10"
+		"wide"			"85"
+		"tall"			"20"
+		"fgcolor"		"tanlight"
+		
+		"pin_to_sibling" 		"BuyBackLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 	
 	"BottleCountLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"BottleCountLabel"
-		"font"			"Medium9"
+		"font"			"HudFontSmall"
 		"labelText"		"%bottles%"
-		"textAlignment" "north-east"
-		"xpos"			"63"
-		"ypos"			"68"
+		"textAlignment" "east"
+		"xpos"			"0"
+		"ypos"			"0"
 		"wide"			"30"
-		"fgcolor"		"White"
+		"tall"			"20"
+		"fgcolor"		"tanlight"
+		
+		"pin_to_sibling" 		"BottleLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}
 }

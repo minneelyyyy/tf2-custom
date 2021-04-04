@@ -4,105 +4,134 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"HeaderLabel"
-		"font"			"Medium14"
+		"font"			"product8"
 		"labelText"		"%header%"
-		"textAlignment" "center"
-		"xpos"			"4"
-		"ypos"			"12"
-		"wide"			"184"
-		"tall"			"22"
-		"fgcolor"		"White"
+		"textAlignment" "west"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"300"
+		"tall"			"20"
+		"fgcolor"		"tanlight120"
+		"bgcolor_override"	"0 0 0 80"
+		"AllCaps"		"1"
+		"textinsetx"	"12"
 	}
 		
 	"TableBackground"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldName"		"TestBackground"
+		"fieldName"		"TableBackground"
 		"xpos"			"0"
-		"ypos"			"14"
+		"ypos"			"0"
 		"zpos"			"-1"
-		"wide"			"190"
-		"tall"			"42"
-		"visible"		"0"
-		"bgcolor_override"		"20 20 20 50"
+		"wide"			"f0"
+		"tall"			"f0"
+		"visible"		"1"
+		"bgcolor_override"		"0 0 0 165"
 	}
 	
 	"CreditCollectedTextLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CreditCollectedTextLabel"
-		"font"			"Medium9"
+		"font"			"HudFontSmall"
 		"labelText"		"#TF_PVE_Collected"
-		"textAlignment" "north-west"
-		"xpos"			"10"
-		"ypos"			"34"
-		"wide"			"70"
-		"fgcolor"		"White"
+		"textAlignment" "west"
+		"xpos"			"6"
+		"ypos"			"20"
+		"wide"			"85"
+		"tall"			"20"
+		"fgcolor"		"tanlight"
 	}
 	
 	"CreditCollectedCountLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CreditCollectedCountLabel"
-		"font"			"Medium9"
+		"font"			"HudFontSmall"
 		"labelText"		"%creditscollected%"
-		"textAlignment" "north-east"
-		"xpos"			"63"
-		"ypos"			"34"
+		"textAlignment" "east"
+		"xpos"			"0"
+		"ypos"			"0"
 		"wide"			"30"
-		"fgcolor"		"Green"
+		"tall"			"20"
+		"fgcolor"		"CreditsGreen"
+		
+		"pin_to_sibling" 		"CreditCollectedTextLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"CreditMissedTextLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CreditMissedTextLabel"
-		"font"			"Medium9"
+		"font"			"HudFontSmall"
 		"labelText"		"#TF_PVE_Missed"
-		"textAlignment" "north-west"
-		"xpos"			"10"
-		"ypos"			"51"
-		"wide"			"70"
-		"fgcolor"		"White"
+		"textAlignment" "west"
+		"xpos"			"0"
+		"ypos"			"-10"
+		"wide"			"85"
+		"tall"			"20"
+		"fgcolor"		"tanlight"
+		
+		"pin_to_sibling" 		"CreditCollectedTextLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 	
 	"CreditMissedCountLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CreditMissedCountLabel"
-		"font"			"Medium9"
+		"font"			"HudFontSmall"
 		"labelText"		"%creditsmissed%"
-		"textAlignment" "north-east"
-		"xpos"			"63"
-		"ypos"			"51"
+		"textAlignment" "east"
+		"xpos"			"0"
+		"ypos"			"0"
 		"wide"			"30"
-		"fgcolor"		"Red"
+		"tall"			"20"
+		"fgcolor"		"RedSolid"
+		
+		"pin_to_sibling" 		"CreditMissedTextLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}
 	
 	"CreditBonusTextLabel"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"CreditCollectedTextLabel"
-		"font"			"Medium9"
+		"fieldName"		"CreditBonusTextLabel"
+		"font"			"HudFontSmall"
 		"labelText"		"#TF_PVE_Bonus"
-		"textAlignment" "north-west"
-		"xpos"			"10"
-		"ypos"			"68"
-		"wide"			"70"
-		"fgcolor"		"White"
+		"textAlignment" "west"
+		"xpos"			"0"
+		"ypos"			"-10"
+		"wide"			"85"
+		"tall"			"20"
+		"fgcolor"		"tanlight"
+		
+		"pin_to_sibling" 		"CreditMissedTextLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_BOTTOMLEFT" // Corner of Element you are pinning to
 	}
 	
 	"CreditBonusCountLabel"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"CreditCollectedCountLabel"
-		"font"			"Medium9"
+		"fieldName"		"CreditBonusCountLabel"
+		"font"			"HudFontSmall"
 		"labelText"		"%creditbonus%"
-		"textAlignment" "north-east"
-		"xpos"			"63"
-		"ypos"			"68"
+		"textAlignment" "east"
+		"xpos"			"0"
+		"ypos"			"0"
 		"wide"			"30"
-		"fgcolor"		"Green"
+		"tall"			"20"
+		"fgcolor"		"CreditsGreen"
+		
+		"pin_to_sibling" 		"CreditBonusTextLabel"
+		"pin_corner_to_sibling" "PIN_TOPLEFT" // Corner of this Element
+		"pin_to_sibling_corner" "PIN_TOPRIGHT" // Corner of Element you are pinning to
 	}
 		
 	"CreditRatingLabelShadow"
@@ -113,23 +142,23 @@
 		"labelText"		"%ratingshadow%"
 		"textAlignment" "center"
 		"xpos"			"126"
-		"ypos"			"18"
+		"ypos"			"26"
 		"wide"			"70"
 		"tall"			"20"
-		"fgcolor"		"Blank"
+		"fgcolor"		"Black"
 	}
 	
 	"CreditRatingLabel"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"CreditCollectedTextLabel"
-		"font"			"Medium14"
+		"fieldName"		"CreditRatingLabel"
+		"font"			"HudFontMediumBold"
 		"labelText"		"%rating%"
 		"textAlignment" "center"
 		"xpos"			"125"
-		"ypos"			"13"
+		"ypos"			"25"
 		"wide"			"70"
 		"tall"			"20"
-		"fgcolor"		"White"
+		"fgcolor"		"tanlight"
 	}
 }

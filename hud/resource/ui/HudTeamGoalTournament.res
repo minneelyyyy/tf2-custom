@@ -1,72 +1,5 @@
-"Resource/UI/HudTeamGoal.res"
+"Resource/UI/HudTeamGoalTournament.res"
 {
-	"HudTeamGoalBG"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"HudTeamGoalBG"
-		"xpos"			"0"
-		"ypos"			"115"
-		"zpos"			"-1"
-		"wide"			"320"
-		"tall"			"150"
-		"visible"		"0"
-		"enabled"		"1"
-		"image"			"../hud/death_panel_blue_bg"
-		"scaleImage"		"1"
-		"teambg_2"		"../hud/death_panel_red_bg"
-		"teambg_3"		"../hud/death_panel_blue_bg"
-	}
-	"SwitchLabel"
-	{	
-		"ControlName"		"CExLabel"
-		"fieldName"		"SwitchLabel"
-		"font"			"Medium9"
-		"xpos"			"12"
-		"ypos"			"21"
-		"zpos"			"1"
-		"wide"			"220"	
-		"tall"			"15"
-		"visible"		"1"
-		"enabled"		"1"
-		"fgcolor"		"White"
-		"wrap"			"1"
-		"labelText"		"#TF_teamswitch_attackers"
-		"textAlignment"		"west"
-	}
-	"GoalLabel"
-	{	
-		"ControlName"		"CExLabel"
-		"fieldName"		"GoalLabel"
-		"font"			"Medium9"
-		"xpos"			"12"
-		"ypos"			"15"
-		"zpos"			"1"
-		"wide"			"220"
-		"wide_hidef"	"200"
-		"wide_lodef"		"230"
-		"tall"			"55"
-		"tall_lodef"	"60"
-		"visible"		"0"
-		"enabled"		"1"
-		"fgcolor"		"White"
-		"wrap"			"1"
-		"labelText"		""
-		"textAlignment"		"west"
-	}
-	"GoalImage"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"GoalImage"
-		"xpos"			"27"
-		"ypos"			"140"
-		"zpos"			"1"
-		"wide"			"45"
-		"tall"			"45"
-		"visible"		"0"
-		"enabled"		"1"
-		"image"			"../hud/hud_icon_attack"
-		"scaleImage"		"1"
-	}
 	"HudStopWatchObjective"
 	{
 		"ControlName"		"EditablePanel"
@@ -78,6 +11,12 @@
 		"tall"				"0"
 		"visible"			"0"
 		"enabled"			"1"
+
+		if_comp
+		{
+			"ypos"	"120"
+		}
+
 		"HudStopWatchObjectiveBG"
 		{
 			"ControlName"		"ScalableImagePanel"
@@ -85,9 +24,11 @@
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"-1"
-			"wide"			"0"
-			"tall"			"0"
-			"visible"		"0"
+			"wide"			"275"
+			"tall"			"170"
+			"autoResize"		"0"
+			"pinCorner"		"0"
+			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../HUD/color_panel_browner"
 	
@@ -105,8 +46,10 @@
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"-1"
-			"wide"			"0"
-			"tall"			"0"
+			"wide"			"275"
+			"tall"			"100"
+			"autoResize"		"0"
+			"pinCorner"		"0"
 			"visible"		"0"
 			"enabled"		"1"
 			"image"			"../HUD/color_panel_browner"
@@ -126,9 +69,11 @@
 			"xpos"			"25"
 			"ypos"			"15"
 			"zpos"			"1"
-			"wide"			"0"
-			"tall"			"0"
-			"visible"		"0"
+			"wide"			"275"
+			"tall"			"15"
+			"autoResize"		"0"
+			"pinCorner"		"0"
+			"visible"		"1"
 			"enabled"		"1"
 			"wrap"			"1"
 			"labelText"		"%objectivelabel%"
@@ -138,18 +83,21 @@
 		{
 			"ControlName"		"CExRichText"
 			"fieldName"		"HudStopWatchObjectiveText1"
-			"xpos"			"25"	[$WIN32]
-			"ypos"			"35"	[$WIN32]
-			"wide"			"0"
-			"tall"			"0"
+			"xpos"			"25"
+			"ypos"			"35"
+			"wide"			"225"
+			"tall"			"150"
 			"wrap"			"1"
-			"visible"		"0"
+			"autoResize"		"1"
+			"pinCorner"		"1"
+			"visible"		"1"
 			"enabled"		"1"
-			"labelText"		"They got 3 points in just 20 minutes 43 seconds."
+			"labelText"		""
 			"textAlignment"		"west"
 			"font"			"HudFontSmallestShadow"
 			"maxchars"		"-1"
 		}
+
 		"HudStopWatchObjectiveShadedBar"
 		{
 			"ControlName"		"ImagePanel"
@@ -157,30 +105,37 @@
 			"xpos"			"25"
 			"ypos"			"65"
 			"zpos"			"2"
-			"wide"			"0"
-			"tall"			"0"
-			"visible"		"0"
+			"wide"			"225"
+			"tall"			"2"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
 			"enabled"		"1"
+			"tabPosition"	"0"	
 			"fillcolor"		"125 125 125 125"
 			"PaintBackgroundType"	"0"
 		}
+
 		"HudStopWatchObjectiveText2"
 		{
 			"ControlName"		"CExRichText"
 			"fieldName"		"HudStopWatchObjectiveText2"
 			"xpos"			"25"	[$WIN32]
 			"ypos"			"75"	[$WIN32]
-			"wide"			"0"
-			"tall"			"0"
+			"wide"			"225"
+			"tall"			"165"
 			"wrap"			"1"
-			"visible"		"0"
+			"autoResize"		"1"
+			"pinCorner"		"1"
+			"visible"		"1"
 			"enabled"		"1"
-			"labelText"		"They got 3 points in just 20 minutes 43 seconds."
+			"labelText"		""
 			"textAlignment"		"west"
 			"font"			"HudFontSmallestShadow"
 			"maxchars"		"-1"
 		}
 	}	
+
 	"HudStopWatchObjectiveArrow"
 	{
 		"ControlName"		"ScalableImagePanel"
@@ -188,10 +143,17 @@
 		"xpos"			"25"
 		"ypos"			"30"
 		"zpos"			"-1"
-		"wide"			"0"
-		"tall"			"0"
+		"wide"			"80"
+		"tall"			"80"
+		"autoResize"		"0"
+		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../HUD/arrow_big"
+
+		if_comp
+		{
+			"ypos"	"45"
+		}
 	}
 }

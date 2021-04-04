@@ -8,8 +8,11 @@
 		"ypos"			"0"
 		"wide"			"150"
 		"tall"			"31"
+		"autoResize"	"0"
+		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		"tabPosition"	"0"
 	}
 	
 	"Background"
@@ -25,7 +28,7 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_background_disabled"
-		"iconColor"		"228 228 242 255"
+		"iconColor"		"255 255 255 255"
 	}
 	
 	"Icon_Teleport"
@@ -40,28 +43,31 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_tele_entrance"
-		"iconColor"		"228 228 242 255"
+		"iconColor"		"255 255 255 255"
 	}
 	
 	"NotBuiltPanel"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"NotBuiltPanel"
-		"xpos"			"2"
+		"xpos"			"0"
 		"ypos"			"0"
 		"wide"			"160"
 		"tall"			"31"
 		"visible"		"1"
+
 		"NotBuiltLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"NotBuiltLabel"
-			"font"			"NoveLight10"
+			"font"			"DefaultVerySmall"
 			"xpos"			"60"
 			"ypos"			"0"
 			"wide"			"200"
 			"tall"			"31"
-			"visible"		"0"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
 			"enabled"		"1"
 			"labelText"		"#Building_hud_tele_not_built"
 			"textAlignment"	"Left"
@@ -79,6 +85,7 @@
 		"wide"			"160"
 		"tall"			"31"
 		"visible"		"0"
+
 		"Icon_Upgrade_1"
 		{
 			"ControlName"	"CIconPanel"
@@ -92,8 +99,9 @@
 			"enabled"		"1"
 			"scaleImage"	"1"	
 			"icon"			"obj_status_upgrade_1"
-			"iconColor"		"228 228 242 255"
+			"iconColor"		"255 255 255 255"
 		}
+
 		"Icon_Upgrade_2"
 		{
 			"ControlName"	"CIconPanel"
@@ -107,8 +115,9 @@
 			"enabled"		"1"
 			"scaleImage"	"1"	
 			"icon"			"obj_status_upgrade_2"
-			"iconColor"		"228 228 242 255"
+			"iconColor"		"255 255 255 255"
 		}
+
 		"Icon_Upgrade_3"
 		{
 			"ControlName"	"CIconPanel"
@@ -122,21 +131,23 @@
 			"enabled"		"1"
 			"scaleImage"	"1"	
 			"icon"			"obj_status_upgrade_3"
-			"iconColor"		"228 228 242 255"
+			"iconColor"		"255 255 255 255"
 		}
+
+
 		"AlertTray"
 		{
 			"ControlName"	"CBuildingStatusAlertTray"
 			"fieldName"		"AlertTray"
-			"xpos"			"104"
-			"ypos"			"2"
-			"zpos"			"-2"
-			"wide"			"4"
-			"tall"			"27"
+			"xpos"			"113"
+			"ypos"			"0"
+			"wide"			"34"
+			"tall"			"31"
 			"visible"		"1"
 			"enabled"		"1"	
 			"icon"			"obj_status_alert_background"
 		}
+
 		"WrenchIcon"
 		{
 			"ControlName"	"CIconPanel"
@@ -150,7 +161,7 @@
 			"enabled"		"1"
 			"scaleImage"	"1"	
 			"icon"			"obj_status_icon_wrench"
-			"iconColor"		"228 228 242 255"
+			"iconColor"		"255 255 255 255"
 		}
 		
 		"SapperIcon"
@@ -166,8 +177,9 @@
 			"enabled"		"1"
 			"scaleImage"	"1"	
 			"icon"			"obj_status_icon_sapper"
-			"iconColor"		"228 228 242 255"
+			"iconColor"		"255 255 255 255"
 		}
+
 		"Health"
 		{	
 			"ControlName"	"CBuildingHealthBar"
@@ -177,12 +189,15 @@
 			"ypos"			"3"
 			"wide"			"8"
 			"tall"			"24"
+			"autoResize"	"0"
+			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"textAlignment"	"Left"
 			"dulltext"		"0"
 			"brighttext"	"0"
 		}
+
 		"BuildingPanel"
 		{
 			"ControlName"	"EditablePanel"
@@ -192,15 +207,18 @@
 			"wide"			"100"
 			"tall"			"31"
 			"visible"		"0"
+
 			"BuildingLabel"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"BuildingLabel"
-				"font"			"NoveLight10"
+				"font"			"DefaultSmall"
 				"xpos"			"0"
 				"ypos"			"5"
 				"wide"			"200"
 				"tall"			"12"
+				"autoResize"	"0"
+				"pinCorner"		"0"
 				"visible"		"1"
 				"enabled"		"1"
 				"labelText"		"#Building_hud_building"
@@ -218,6 +236,8 @@
 				"ypos"			"16"
 				"wide"			"50"
 				"tall"			"8"				
+				"autoResize"	"0"
+				"pinCorner"		"0"
 				"visible"		"1"
 				"enabled"		"1"
 				"textAlignment"	"Left"
@@ -250,11 +270,13 @@
 				{
 					"ControlName"	"CExLabel"
 					"fieldName"		"RechargeLabel"
-					"font"			"NoveLight10"
+					"font"			"DefaultVerySmall"
 					"xpos"			"0"
 					"ypos"			"1"
 					"wide"			"200"
 					"tall"			"12"
+					"autoResize"	"0"
+					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
 					"labelText"		"#Building_hud_tele_charging"
@@ -272,6 +294,8 @@
 					"ypos"			"11"
 					"wide"			"50"
 					"tall"			"5"				
+					"autoResize"	"0"
+					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
 					"textAlignment"	"Left"
@@ -294,11 +318,13 @@
 				{	
 					"ControlName"	"CExLabel"
 					"fieldName"		"TimesUsedLabel"
-					"font"			"NoveLight10"
+					"font"			"DefaultVerySmall"
 					"xpos"			"0"
 					"ypos"			"-6"
 					"wide"			"200"
 					"tall"			"31"
+					"autoResize"	"0"
+					"pinCorner"		"0"
 					"visible"		"1"
 					"enabled"		"1"
 					"labelText"		"#Building_hud_tele_times_used"
@@ -312,11 +338,13 @@
 			{	
 				"ControlName"	"CExLabel"
 				"fieldName"		"UpgradeLabel"
-				"font"			"NoveLight10"
+				"font"			"DefaultVerySmall"
 				"xpos"			"0"
 				"ypos"			"14"
 				"wide"			"200"
 				"tall"			"12"
+				"autoResize"	"0"
+				"pinCorner"		"0"
 				"visible"		"1"
 				"enabled"		"1"
 				"labelText"		"#Building_hud_sentry_upgrade"
@@ -334,6 +362,8 @@
 				"ypos"			"24"
 				"wide"			"50"
 				"tall"			"2"
+				"autoResize"	"0"
+				"pinCorner"		"0"
 				"visible"		"1"
 				"enabled"		"1"
 				"textAlignment"	"Left"
