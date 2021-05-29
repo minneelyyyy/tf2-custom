@@ -1,0 +1,3 @@
+*.cache
+./hud/sound
+./configs/sound/sound.cache
