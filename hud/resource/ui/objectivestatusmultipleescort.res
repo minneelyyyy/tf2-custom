@@ -1,54 +1,54 @@
-#base "Def_Files/ObjectiveStatusMultipleEscort.res"
-////************************************************Multi Payload Settings.
 "Resource/UI/ObjectiveStatusMultipleEscort.res"
-{	
+{
 	"ObjectiveStatusMultipleEscort"
 	{
-		"visible"									"1"
-		"enabled"									"1"
-	}						
-	"BlueEscortPanel"						
-	{						
-		"ypos"										"r150"
-		"if_blue_is_top"						
-		{						
-			"ypos"									"r150"
-		}
-		"EscortItemPanel"
+		"ControlName"		"EditablePanel"
+		"fieldName"			"ObjectiveStatusMultipleEscort"
+		"xpos"				"0"
+		"ypos"				"27"
+		"wide"				"f0"
+		"tall"				"480"
+		"visible"			"1"
+		"enabled"			"1"
+	}
+
+	"BlueEscortPanel"
+	{
+		"ControlName"		"CTFHudEscort"
+		"fieldName"			"BlueEscortPanel"
+		"xpos"				"0"
+		"ypos"				"r150"
+		"zpos"				"220"
+		"wide"				"f0"
+		"tall"				"200"
+		"visible"			"1"
+		"enabled"			"1"
+		"progress_xpos"		"79"
+		"progress_wide"		"270"
+
+		"if_blue_is_top"
 		{
-			"EscortTeardrop"
-			{
-				"ControlName"						"EditablePanel"
-				"fieldName"							"EscortTeardrop"
-				"xpos"								"9999"
-				"visible"							"0"
-				"enabled"							"0"
-			}	
-		}		
-	}	
+			"ypos"			"r162"
+		}
+	}
+
 	"RedEscortPanel"
 	{
-		"ypos"										"r150"
-		"if_red_is_top"					
-		{					
-			"ypos"									"r150"
-		}
-		"EscortItemPanel"
+		"ControlName"		"CTFHudEscort"
+		"fieldName"			"RedEscortPanel"
+		"xpos"				"0"
+		"ypos"				"r150"
+		"zpos"				"220"
+		"wide"				"f0"
+		"tall"				"200"
+		"visible"			"1"
+		"enabled"			"1"
+		"progress_xpos"		"79"
+		"progress_wide"		"270"
+
+		"if_red_is_top"
 		{
-			"CapPlayerImage"
-			{
-				"wide"								"0"
-				"tall"								"0"
-			}			
-			"CapNumPlayers"			
-			{			
-				"xpos"								"22"
-			}		
-			"EscortTeardrop"
-			{
-				"visible"							"0"
-				"enabled"							"0"
-			}	
-		}		
+			"ypos"			"r162"
+		}
 	}
 }

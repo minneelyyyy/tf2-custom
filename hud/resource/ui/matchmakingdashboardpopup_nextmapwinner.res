@@ -49,7 +49,8 @@
 			"tall"			"f5"
 			"visible"		"1"
 			"PaintBackgroundType"	"2"
-			"border"		"ReplayDefaultBorder"
+			"border"		"NoBorder"
+			"bgcolor_override"	"DarkGrey"
 			"proportionaltoparent"	"1"
 			"pinCorner"		"2"
 
@@ -64,7 +65,7 @@
 				"tall"			"20"
 				"visible"		"1"
 				"enabled"		"1"
-				"font"			"HudFontSmallBold"
+				"font"			"HudFontSmall"
 				"fgcolor_override"	"TanLight"
 				"textAlignment"	"center"
 				"labelText"		"#TF_Matchmaking_RollingQueue_NextMapWinner"
@@ -80,7 +81,7 @@
 				"wide"			"50"
 				"tall"			"o0.75"
 				"zpos"			"1"
-				"proportionaltoparent"	"1"	
+				"proportionaltoparent"	"1"
 				"mouseinputenabled"	"0"
 
 				"MapImage"
@@ -93,7 +94,7 @@
 					"tall"			"o1"
 					"zpos"			"0"
 					"image"			"..\vgui\maps\menu_thumb_pl_goldrush"
-					"proportionaltoparent"	"1"	
+					"proportionaltoparent"	"1"
 					"mouseinputenabled"	"0"
 				}
 			}
