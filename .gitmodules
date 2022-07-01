@@ -1,0 +1,3 @@
+[submodule "sammyhud"]
+	path = sammyhud
+	url = https://github.com/sammybun/sammyhud
