@@ -1,0 +1,35 @@
+hudanimations_manifest
+{
+
+
+
+///////REMOVE // FROM THE ONE YOU WANT TO USE/////////
+
+	"file" "scripts/hudanimations_health.txt"
+//	"file" "scripts/hudanimations_healthcross.txt"
+
+
+
+///////ADD OR REMOVE // AS NEEDED/////////
+
+//	"file" "scripts/hudanimations_ammoglitch.txt"
+//	"file" "scripts/hudanimations_ammoglitch_minmode.txt"
+	"file"	"scripts/hudanimations_chatfix.txt"
+	"file"	"scripts/hudanimations_fix.txt"
+
+
+
+///////DONT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING K THANKS LOVE YOU/////////
+
+	"file" "scripts/hudanimations.txt"
+	"file" "scripts/hudanimations_goog.txt"
+	"file" "scripts/hudanimations_ammo.txt"
+	"file" "scripts/hudanimations_medic.txt"
+	"file" "resource/crosshairs/crosshair_animation.txt"
+	"file" "scripts/hudanimations_tf.txt"
+	"file"	"scripts/hudanimations_spycloak.txt"
+	"file"	"scripts/hudanimations_teamstatus.txt"
+	"file"	"scripts/hudanimations_koth.txt"
+	"file"	"scripts/hudanimations_ctf.txt"
+	"file"	"scripts/hudanimations_tournament.txt"
+}
