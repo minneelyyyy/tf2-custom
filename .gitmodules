@@ -1,0 +1,3 @@
+[submodule "budhud"]
+	path = budhud
+	url = https://github.com/rbjaxter/budhud
