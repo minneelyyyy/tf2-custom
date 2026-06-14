@@ -1,0 +1,3 @@
+[submodule "idhud"]
+	path = idhud
+	url = https://github.com/idhud-tf2/idhud.git
